@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <h1>VOila</h1>
+<h2>sajndaslkasd</h2>
 <section>
   <div class="container">
   <?php while ( have_posts() ) : the_post (); ?>
