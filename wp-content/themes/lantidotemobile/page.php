@@ -7,6 +7,7 @@
     <div id=”post-<?php the_ID(); ?>” <?php post_class(); ?>>
       <?php $product = wc_get_product( $post->ID ); ?>
       <?php var_dump($product); ?>
+      <p>absdhjaskd</p>
         <?php the_content(); ?>
       </div>
   <?php endwhile; ?>
