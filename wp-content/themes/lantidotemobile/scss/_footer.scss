@@ -1,0 +1,94 @@
+footer{
+  margin: 0;
+  position: relative;
+}
+
+div.waves{
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+div.background{
+  width: 100%;
+  height: calc(100% - 200px);
+  background-color: #000;
+  z-index: -1;
+  bottom: 0;
+  position: absolute;
+}
+
+@media (max-width: 992px) {
+  footer .avantages > div:first-child{
+    margin-bottom: 60px;
+  }
+}
+
+footer .logo{
+  width: auto;
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+footer h6{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+footer .avantages img{
+  width: 70px;
+}
+
+footer #infolettre{
+  padding: 0;
+  margin-bottom: 100px;
+  border: 0.5px solid #D6D6D6;
+  box-shadow: 2px 2px 2px #00000029;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+footer #infolettre p, footer #infolettre h5{
+  color: #000;
+  padding: 30px 0px;
+}
+
+footer #infolettre h5{
+  border-bottom: 0.5px solid #D6D6D6;
+}
+
+footer #infolettre .texte{
+  padding: 20px 100px 50px 100px;
+}
+
+@media (max-width: 992px) {
+  footer #infolettre .texte{
+    padding: 20px 70px 50px 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer #infolettre .texte{
+    padding: 20px 50px 40px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer #infolettre .texte{
+    padding: 20px 20px 30px 20px;
+  }
+}
+
+
+footer #menu-footer{
+  padding: 100px 0px;
+}
+
+footer .avantages .texte{
+  padding-left: 15px;
+}
+
+footer a, footer p, footer h6, footer h5{
+  color: #fff;
+}
