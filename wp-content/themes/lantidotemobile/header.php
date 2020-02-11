@@ -6,8 +6,8 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="<?php the_field('favicon', 'option'); ?>" rel="shortcut icon">
 
-    <title>Lantidote mobile</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,7 +26,39 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <header class="z-6">
+  			<div class="header ">
+  				<div class="h-100 flex-row">
+  					<div class="h-100 d-flex align-items-center justify-content-between">
+  						<div class="h-100 logo mr-auto z-7">
+  							<a class="h-100" href="<?= get_home_url(); ?>">
+  								<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+  								<?php $logoHeader = get_field('logo', 'option'); ?>
+  								<img class="logo" src="<?= $logoHeader; ?>">
+  							</a>
+  						</div>
+  						<?php wp_nav_menu(
+          array(
+                                  'theme_location' => 'menu-principal',
+                                  'container' => false,
+                                  'menu_class' => 'h-100 justify-content-end align-items-center d-none d-lg-flex'
+                              )
+                          );?>
+  						<div class="hamburger left d-block d-lg-none">
 
+  							<span></span>
+  						</div>
+  						<div class="menu-mobile z-6">
+  							<?php wp_nav_menu(array( 'theme_location' => 'menu-principal' )); ?>
+
+  						</div>
+
+
+  			</div>
+  		</div>
+
+
+  	</header>
 <header>
 
 </header>
