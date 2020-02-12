@@ -1,17 +1,24 @@
+<!-- accueil = front-page.php -->
+<?php get_header(); ?>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		<?php
+		if ( have_posts() ) :
+
+			get_template_part( 'loop' );
+
+		else :
+
+			get_template_part( 'content', 'none' );
+
+		endif;
+		?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
 <?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
-
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
-
-/** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+do_action( 'storefront_sidebar' );
+get_footer();
