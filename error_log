@@ -1,0 +1,7 @@
+[12-Feb-2020 16:23:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_field() in /home/option/public_html/dev/lantidotemobile/public_html/wp-content/themes/lantidotemobile/clavardage.php:14
+Stack trace:
+#0 /home/option/public_html/dev/lantidotemobile/public_html/wp-includes/template-loader.php(98): include()
+#1 /home/option/public_html/dev/lantidotemobile/public_html/wp-blog-header.php(19): require_once('/home/option/pu...')
+#2 /home/option/public_html/dev/lantidotemobile/public_html/index.php(17): require('/home/option/pu...')
+#3 {main}
+  thrown in /home/option/public_html/dev/lantidotemobile/public_html/wp-content/themes/lantidotemobile/clavardage.php on line 14
