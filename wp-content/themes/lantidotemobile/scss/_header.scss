@@ -1,0 +1,54 @@
+.header
+{
+  padding: 15px 35px;
+  background: white;
+  box-shadow: 2px 2px 2px #00000029;
+  img.logo
+  {
+        width: 160px;
+  }
+  a {
+    &:hover
+    {
+      color: black;
+      text-decoration: underline;
+    }
+    img:not(.logo)
+    {
+      width: 24px;
+      margin-left: 10px;
+    }
+  }
+  #menu-menu-principal
+  {
+    li {
+      padding-left: 24px;
+      a {
+        font-size: $s_menu;
+        &:hover
+        {
+          color: black;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.lrm-main
+{
+  align-items: center;
+    display: flex;
+    .lrm-user-modal-container,.lrm-user-modal-container .lrm-switcher.-is-not-login-only li:first-child a
+    {
+      border-radius: 16px;
+    }
+    .lrm-user-modal-container .lrm-switcher.-is-not-login-only li:last-child a
+    {
+      border-radius: 0 16px 0 0;
+    }
+
+}
+.lrm-font-svg .lrm-switch-to--login:before
+{
+  background: none;
+}

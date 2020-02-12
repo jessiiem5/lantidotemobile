@@ -29,8 +29,8 @@
   <header class="z-6">
   			<div class="header ">
   				<div class="h-100 flex-row">
-  					<div class="h-100 d-flex align-items-center justify-content-between">
-  						<div class="h-100 logo mr-auto z-7">
+  					<div class="h-100 d-flex align-items-center ">
+  						<div class="h-100 logo z-7">
   							<a class="h-100" href="<?= get_home_url(); ?>">
   								<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
   								<?php $logoHeader = get_field('logo', 'option'); ?>
@@ -41,14 +41,18 @@
           array(
                                   'theme_location' => 'menu-principal',
                                   'container' => false,
-                                  'menu_class' => 'h-100 justify-content-end align-items-center d-none d-lg-flex'
+                                  'menu_class' => 'h-100 align-items-center d-none d-lg-flex mb-0'
                               )
                           );?>
-  						<div class="hamburger left d-block d-lg-none">
+                          <div class="d-none d-lg-flex ml-auto">
+              <a href="#" class="lrm-login ml-auto lrm-hide-if-logged-in">Se connecter</a>
+              <?php $current_user = wp_get_current_user();?>
+              <a href="<?php echo get_page_link(255); ?>" class=" lrm-show-if-logged-in"><? echo $current_user->user_login ?><img src="<?php echo get_template_directory_uri();?>/img/iconfinder_00-ELASTOFONT-STORE-READY_user-circle_2703062.svg" /></a>
+  						</div><div class="hamburger left d-block d-lg-none">
 
   							<span></span>
   						</div>
-  						<div class="menu-mobile z-6">
+  						<div class="menu-mobile z-6 d-lg-none d-flex">
   							<?php wp_nav_menu(array( 'theme_location' => 'menu-principal' )); ?>
 
   						</div>

@@ -136,3 +136,11 @@ function stop_plugin_update( $value ) {
 add_filter( 'site_transient_update_plugins', 'stop_plugin_update' );
 
 add_action('acf/init', 'my_acf_init');
+
+function disable_plugin_updates( $value ) {
+        if(is_object($value) && isset($value->response)){
+            unset( $value->response['ajax-login-and-registration-modal-popup/ajax-login-and-registration-modal-popup.php'] );
+        }
+        return $value;
+    }
+    add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
