@@ -1,5 +1,4 @@
 <footer>
-  <h1>MODIF ADAM</h1>
   <div class="container">
     <div id="infolettre" class="col-12 offset-0 offset-md-1 col-md-10 text-center">
       <h5><?php the_field('titre_infolettre','option'); ?></h5>

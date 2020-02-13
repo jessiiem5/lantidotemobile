@@ -24,7 +24,7 @@
     li {
       padding-left: 24px;
       a {
-        font-size: $s_menu;
+        font-size: $s_16;
         &:hover
         {
           color: black;
@@ -38,13 +38,26 @@
 {
   align-items: center;
     display: flex;
-    .lrm-user-modal-container,.lrm-user-modal-container .lrm-switcher.-is-not-login-only li:first-child a
+    .lrm-user-modal-container
     {
-      border-radius: 16px;
+      border-radius: 16px!important;
     }
     .lrm-user-modal-container .lrm-switcher.-is-not-login-only li:last-child a
     {
       border-radius: 0 16px 0 0;
+    }
+    .lrm-user-modal-container .lrm-switcher.-is-not-login-only li:first-child a
+    {
+      border-radius: 16px 0 0 0;
+    }
+    .lrm-switcher a
+    {
+      font-size: $s_30;
+      font-weight: $w_bold;
+      color: $c_black;
+      text-align: left;
+      padding: 20px;
+      line-height: 28px;
     }
 
 }

@@ -13,7 +13,7 @@ div.waves{
 div.background{
   width: 100%;
   height: calc(100% - 200px);
-  background-color: #000;
+  background-color: $c_black;
   z-index: -1;
   bottom: 0;
   position: absolute;
@@ -43,10 +43,10 @@ footer .avantages img{
 footer #infolettre{
   padding: 0;
   margin-bottom: 100px;
-  border: 0.5px solid #D6D6D6;
+  border: 0.5px solid $c_lightgrey;
   box-shadow: 2px 2px 2px #00000029;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: $c_white;
 }
 
 footer #infolettre p, footer #infolettre h5{
@@ -55,7 +55,7 @@ footer #infolettre p, footer #infolettre h5{
 }
 
 footer #infolettre h5{
-  border-bottom: 0.5px solid #D6D6D6;
+  border-bottom: 0.5px solid $c_lightgrey;
 }
 
 footer #infolettre .texte{
@@ -90,5 +90,5 @@ footer .avantages .texte{
 }
 
 footer a, footer p, footer h6, footer h5{
-  color: #fff;
+  color: $c_white;
 }
