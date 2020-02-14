@@ -38,9 +38,81 @@
 {
   align-items: center;
     display: flex;
+
     .lrm-user-modal-container
     {
       border-radius: 16px!important;
+      max-width: 900px;
+    }
+    .lrm-form
+    {
+      max-width: 800px;
+      margin: auto;
+      .fieldset.fieldset--submit
+      {
+        text-align: right;
+        a
+        {
+          box-shadow: 2px 2px 2px #00000029;
+        }
+      }
+      p.lrm-form-bottom-message {
+        position: relative;
+        bottom: 0;
+        text-align: left;
+         a {
+            color: $c_pink;
+        }
+      }
+      .hide-password {
+        top: 67%;
+      }
+      .open label{
+        color: $c_black;
+        padding: 0px 0px;
+        transform: translate(5px, 0px);
+        transition: 0.3s;
+      }
+      label {
+        font-size: 1.5rem;
+        background-color: transparent;
+        font-weight: bold;
+        position: relative;
+        z-index: 100;
+        padding: 0px 10px!important;
+        transform: translate(20px, 18px);
+        transition: 0.3s;
+        text-transform: uppercase;
+        background-image: none!important;
+        width: auto;
+        height: auto!important;
+        color: $c_black!important;
+        left: 0;
+    }
+      .lrm-intro
+      {
+        max-width: 580px;
+        font-size: $s_15;
+        font-weight: $w_book;
+        padding-bottom: 30px;
+      }
+      .lrm-nice-checkbox__label .lrm-nice-checkbox__indicator {
+          border: 2px solid $c_pink;
+          border-radius: 3px;
+      }
+      .lrm-nice-checkbox__label input:checked ~ .lrm-nice-checkbox__indicator {
+          background: $c_pink;
+          border-color: $c_pink;
+      }
+      .remember
+      {
+        text-align: right;
+      }
+      .lrm-remember-me-checkbox
+      {
+        display: inline;
+        padding-left:30px!important;
+      }
     }
     .lrm-user-modal-container .lrm-switcher.-is-not-login-only li:last-child a
     {
@@ -49,6 +121,11 @@
     .lrm-user-modal-container .lrm-switcher.-is-not-login-only li:first-child a
     {
       border-radius: 16px 0 0 0;
+    }
+    .lrm-user-modal-container .lrm-switcher.-is-not-login-only a:not(.selected)
+    {
+      background: $c_orange;
+      color:$c_white;
     }
     .lrm-switcher a
     {
@@ -59,9 +136,45 @@
       padding: 20px;
       line-height: 28px;
     }
+    .lrm-signin-section, .lrm-signup-section
+    {
+      padding: 60px 0;
+    }
 
 }
-.lrm-font-svg .lrm-switch-to--login:before
+.lrm-font-svg .lrm-switch-to--login:before,.lrm-font-svg .lrm-switch-to--register:before
 {
   background: none;
+  width: 0;
+margin: 0;
+}
+.lrm-user-modal-container .input-text,
+.lrm-user-modal-container input[type=email],
+.lrm-user-modal-container input[type=password],
+.lrm-user-modal-container input[type=search],
+.lrm-user-modal-container input[type=tel],
+.lrm-user-modal-container input[type=text],
+.lrm-user-modal-container input[type=url],
+.lrm-user-modal-container select,
+.lrm-user-modal-container textarea{
+    width: 100%;
+    color: #000;
+    padding: 10px 15px;
+    border: 1px solid $c_lightgrey;
+    font-size: initial;
+    cursor: auto;
+    border-radius: 30px;
+}
+.lrm-user-modal-container .input-text:focus,
+.lrm-user-modal-container input[type=email]:focus,
+.lrm-user-modal-container input[type=password]:focus,
+.lrm-user-modal-container input[type=search]:focus,
+.lrm-user-modal-container input[type=tel]:focus,
+.lrm-user-modal-container input[type=text]:focus,
+.lrm-user-modal-container input[type=url]:focus,
+.lrm-user-modal-container select:focus,
+.lrm-user-modal-container textarea:focus
+{
+  border:1px solid $c_lightgrey;
+  box-shadow: none;
 }

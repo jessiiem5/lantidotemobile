@@ -19,11 +19,33 @@ div.background{
   position: absolute;
 }
 
-@media (max-width: 992px) {
-  footer .avantages > div:first-child{
-    margin-bottom: 60px;
-  }
+footer h6{
+  margin-bottom: 25px;
 }
+
+footer li{
+  margin-bottom: 15px;
+}
+
+footer .avantages img{
+  margin: 0px 0px 20px 15px;
+}
+
+
+
+footer .menu-social i{
+  font-size: 1.8rem;
+}
+
+footer .menu-social a{
+  margin-right: 15px;
+}
+
+footer .menu-social a:last-child{
+  margin-right: 0px;
+}
+
+
 
 footer .logo{
   width: auto;
@@ -62,23 +84,7 @@ footer #infolettre .texte{
   padding: 20px 100px 50px 100px;
 }
 
-@media (max-width: 992px) {
-  footer #infolettre .texte{
-    padding: 20px 70px 50px 70px;
-  }
-}
 
-@media (max-width: 768px) {
-  footer #infolettre .texte{
-    padding: 20px 50px 40px 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  footer #infolettre .texte{
-    padding: 20px 20px 30px 20px;
-  }
-}
 
 
 footer #menu-footer{

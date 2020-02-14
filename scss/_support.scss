@@ -1,0 +1,65 @@
+
+#support h4{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#support .sous-titre{
+  font-size: 1.6rem;
+}
+
+#support .support{
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  box-shadow: 2px 2px 2px #00000029;
+  border: 1px solid $c_lightgrey;
+  border-radius: 10px;
+}
+
+
+
+#support .support .image{
+  height: 100px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#support .support img{
+  width: 100px;
+  height: auto;
+}
+
+#support .image::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  z-index: -1;
+}
+
+#support .clavardez .image::after{
+  background-color: $c_yellow;
+}
+
+#support .faq .image::after{
+  background-color: $c_blue;
+}
+
+#support .contact .image::after{
+  background-color: $c_pink;
+}
+
+#support .content{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+}

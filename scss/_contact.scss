@@ -1,0 +1,112 @@
+
+#formulaire{
+  padding-top: 0px;
+}
+
+.contact label{
+  font-size: 1.5rem;
+  background-color: transparent;
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+  padding: 0px 10px;
+  transform: translate(20px, 18px);
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.contact.open label{
+  color: $c_black;
+  padding: 0px 0px;
+  transform: translate(5px, 0px);
+  transition: 0.3s;
+}
+
+.wpcf7-form select,
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form textarea,
+{
+    width: 100%;
+    color: #000;
+    padding: 10px 15px;
+    border: 1px solid $c_lightgrey;
+    font-size: initial;
+    cursor: auto;
+    border-radius: 30px;
+}
+
+
+.div-submit{
+  width: fit-content;
+  position: relative;
+  text-align: center;
+  transition: 0.2s background;
+}
+
+.div-submit::after{
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 2px;
+  bottom: -3px;
+  left: -6px;
+  background-color: $c_yellow;
+  transition: 0.2s ease;
+  cursor: pointer;
+  z-index: -10;
+}
+
+.div-submit:hover::after{
+  transition: 0.2s ease;
+  height: 100%;
+}
+
+.wpcf7-form input[type="submit"]{
+    text-align: left;
+    font-size: 2rem;
+    position: relative;
+    padding: 10px 0px 5px 0px ;
+    border: none;
+    background: none;
+    color: $c_yellow;
+    transition: 0.2s;
+}
+
+.div-submit:hover input[type="submit"]{
+  color: $c_white;
+  transition: 0.2s ease;
+}
+
+.wpcf7-form input:focus,
+.wpcf7-form textarea:focus{
+    outline: none;
+}
+
+#texte-contact .contactez-nous{
+  padding-bottom: 100px;
+}
+
+#texte-contact .telephone a{
+  font-size: 4rem;
+  color: $c_pink;
+  transition: 0.2s ease;
+}
+
+#texte-contact .telephone a:hover{
+  color: $c_black;
+  transition: 0.2s ease;
+}
+
+#texte-contact .email a{
+  color: $c_pink;
+  transition: 0.2s ease;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#texte-contact .email a:hover{
+  color: $c_black;
+  transition: 0.2s ease;
+}

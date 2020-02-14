@@ -1,0 +1,132 @@
+#blog
+{
+  .big img{
+    height: 350px;
+    object-fit: cover;
+  }
+  .petit img{
+    height: 350px;
+    object-fit: cover;
+  }
+  .image{
+    position: relative;
+    span{
+      position: absolute;
+      font-size: 1.4rem;
+      background-color: $c_orange;
+      padding: 7px 15px 7px 20px;
+      right: 0;
+      top: 20px;
+      color: $c_white;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+    }
+  }
+  .menu-category
+  {
+    box-shadow: 2px 2px 2px #00000029;
+    border: 1px solid $c_lightgrey;
+    border-radius: 10px;
+    h4
+    {
+      object-fit: cover;
+      margin: 0;
+      padding: 25px 30px;
+      font-size: 2rem;
+      color: $c_white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: #000;
+    }
+    ul{
+      margin-bottom: 0px;
+      li
+      {
+        &:first-child a{
+          border: none;
+        }
+          a{
+          border-top: 1px solid $c_lightgrey;
+          font-size: 2rem;
+          font-weight: bold;
+          display: block;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding: 10px 30px 20px 30px;
+          top: 0;
+        }
+      }
+    }
+  }
+  .menu-populaire
+  {
+    box-shadow: 2px 2px 2px #00000029;
+    border: 1px solid $c_lightgrey;
+    border-radius: 10px;
+      h4{
+      object-fit: cover;
+      margin: 0;
+      padding: 25px 30px;
+      font-size: 2rem;
+      color: $c_white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: #000;
+    }
+    ul{
+      margin-bottom: 0px;
+      li
+      {
+        &:last-child a
+        {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        a{
+           font-size: 1.6rem;
+           font-weight: bold;
+           display: block;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           align-items: center;
+           padding: 15px 30px;
+           top: 0;
+           transition: 0.1s ease;
+           &:hover
+           {
+             transition: 0.1s ease;
+             background-color: $c_black;
+             color: $c_white;
+           }
+         }
+       }
+    }
+  }
+  .menu-category
+  {
+    ul
+    {
+      li
+      {
+        &:last-child a
+        {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        a
+        {
+          transition: 0.1s ease;
+          &:hover{
+            transition: 0.1s ease;
+            background-color: $c_black;
+            color: $c_white;
+          }
+        }
+      }
+    }
+  }
+
+}

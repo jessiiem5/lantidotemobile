@@ -1,0 +1,178 @@
+
+#search .input{
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px #00000029;
+}
+
+#search #myInput{
+  width: 80%;
+  background-color: $c_white;
+  border: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 10px 20px;
+}
+
+#search button#rechercher{
+  background-color: $c_pink;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: none;
+  width: 20%;
+  color: $c_white;
+  transition: 0.1s ease;
+}
+
+#search button#rechercher:hover{
+  background-color: $c_black;
+}
+
+
+
+#search p{
+  outline: none;
+}
+
+#search .question{
+  cursor: pointer;
+}
+
+#search ul li{
+  display: none;
+  padding:0;
+}
+
+#search li.accordion{
+  margin-top: 20px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: $c_white;
+  border-radius: 8px;
+  border: 1px solid $c_lightgrey;
+}
+
+#search .reponse p{
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+
+#tabs{
+  padding-top: 0px;
+}
+
+#tabs ul{
+  background-color: $c_white;
+  width: 100%;
+  padding: 0;
+}
+
+#tabs a{
+  color: $c_black;
+  outline: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 30px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+#tabs a:hover{
+  transition: 0.1s ease;
+  background-color: $c_pink;
+  color: $c_white;
+}
+
+#tabs li.ui-state-active a{
+  background-color: $c_pink;
+  color: $c_white;
+}
+
+#tabs ul li{
+  position: relative;
+  padding: 40px 30px;
+  width: 100%;
+  border: 1px solid $c_lightgrey;
+  border-top: none;
+}
+
+#tabs ul li:first-child{
+  border-top: 1px solid $c_lightgrey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+
+#tabs ul li:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#tabs h5{
+  color: $c_black;
+  font-weight: bold;
+  padding: 30px;
+  border: 0.5px solid $c_lightgrey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0;
+}
+
+#tabs .cats p{
+  padding: 30px;
+  border: 1px solid $c_lightgrey;
+  background-color: $c_white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#tabs .categorie{
+  background-color: $c_white;
+  width: 100%;
+  padding: 0;
+  box-shadow: 2px 2px 2px #00000029;
+  border-radius: 5px;
+}
+
+#tabs ul.categorie{
+  overflow: hidden;
+}
+
+
+
+  
+
+
+
+#tabs p.question{
+  padding: 30px;
+  border-top: 0.5px solid $c_lightgrey;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+#tabs p.question:first-child{
+  padding: 30px;
+  border-top: none;
+}
+
+#tabs .accordion{
+  border: 0.5px solid $c_lightgrey;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#tabs .reponse{
+  padding: 5px 30px 30px 30px;
+  margin: 0;
+}
